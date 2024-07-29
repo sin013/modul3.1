@@ -14,21 +14,24 @@ def StringInfo(a):
     CountCalls()
 
 
-def IsContains(a):
+def IsContains(a, b):
     global cals
+    i = False
     a = a.upper()
-    if a == 'URBAN':
-        a = True
-    else:
-        a = False
-    print(a)
+    for j in b:
+        if j.upper() == a:
+            i = True
+        else:
+            i = False
+
+    print(i)
     CountCalls()
 
 
 StringInfo('gdfkl')
 StringInfo('str(input())')
 StringInfo("jfbfdhj")
-IsContains("bfdb")
-IsContains("UrbaN")
-IsContains("urban")
+IsContains("bfdb", ['dsfugdsf', 'sdgjshhkds'])
+IsContains('sudgdufg', ["UrbaN", "dfbjgjsbgj"])
+IsContains("urban", ['sdgihi', 'URbaN'])
 print(cals)
